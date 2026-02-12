@@ -22,9 +22,10 @@ graph LR
 ```
 
 ### 3-1. 시스템 구조 설명
-본 시스템은 Exporter → Prometheus → Grafana 구조로 구성된다.  
-Exporter가 시스템 상태를 metrics 형태로 노출하면 Prometheus가 주기적으로 이를 수집하여 내장 TSDB에 저장한다.  
-Grafana는 Prometheus를 데이터소스로 사용하여 수집된 데이터를 시각화하며, 사용자는 대시보드를 통해 시스템 상태를 확인한다.
+
+- 본 시스템은 Exporter → Prometheus → Grafana 구조로 구성된다.  
+- Exporter가 시스템 상태를 metrics 형태로 노출하면 Prometheus가 주기적으로 이를 수집하여 내장 TSDB에 저장한다.  
+- Grafana는 Prometheus를 데이터소스로 사용하여 수집된 데이터를 시각화하며, 사용자는 대시보드를 통해 시스템 상태를 확인한다.
 ---
 ## 4. 이상 상황 재현 방법
 
